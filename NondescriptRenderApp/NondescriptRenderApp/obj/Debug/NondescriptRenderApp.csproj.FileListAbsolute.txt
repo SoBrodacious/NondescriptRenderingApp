@@ -1,0 +1,16 @@
+E:\Programming\NDRA\NondescriptRenderingApp\NondescriptRenderApp\NondescriptRenderApp\bin\Debug\NondescriptRenderApp.exe.config
+E:\Programming\NDRA\NondescriptRenderingApp\NondescriptRenderApp\NondescriptRenderApp\bin\Debug\NondescriptRenderApp.exe
+E:\Programming\NDRA\NondescriptRenderingApp\NondescriptRenderApp\NondescriptRenderApp\bin\Debug\NondescriptRenderApp.pdb
+E:\Programming\NDRA\NondescriptRenderingApp\NondescriptRenderApp\NondescriptRenderApp\bin\Debug\OpenTK.dll
+E:\Programming\NDRA\NondescriptRenderingApp\NondescriptRenderApp\NondescriptRenderApp\bin\Debug\OpenTK.GLControl.dll
+E:\Programming\NDRA\NondescriptRenderingApp\NondescriptRenderApp\NondescriptRenderApp\bin\Debug\OpenTK.pdb
+E:\Programming\NDRA\NondescriptRenderingApp\NondescriptRenderApp\NondescriptRenderApp\bin\Debug\OpenTK.xml
+E:\Programming\NDRA\NondescriptRenderingApp\NondescriptRenderApp\NondescriptRenderApp\bin\Debug\OpenTK.GLControl.pdb
+E:\Programming\NDRA\NondescriptRenderingApp\NondescriptRenderApp\NondescriptRenderApp\bin\Debug\OpenTK.GLControl.xml
+E:\Programming\NDRA\NondescriptRenderingApp\NondescriptRenderApp\NondescriptRenderApp\obj\Debug\NondescriptRenderApp.csprojAssemblyReference.cache
+E:\Programming\NDRA\NondescriptRenderingApp\NondescriptRenderApp\NondescriptRenderApp\obj\Debug\NondescriptRenderApp.Properties.Resources.resources
+E:\Programming\NDRA\NondescriptRenderingApp\NondescriptRenderApp\NondescriptRenderApp\obj\Debug\NondescriptRenderApp.csproj.GenerateResource.cache
+E:\Programming\NDRA\NondescriptRenderingApp\NondescriptRenderApp\NondescriptRenderApp\obj\Debug\NondescriptRenderApp.csproj.CoreCompileInputs.cache
+E:\Programming\NDRA\NondescriptRenderingApp\NondescriptRenderApp\NondescriptRenderApp\obj\Debug\NondescriptRenderApp.csproj.CopyComplete
+E:\Programming\NDRA\NondescriptRenderingApp\NondescriptRenderApp\NondescriptRenderApp\obj\Debug\NondescriptRenderApp.exe
+E:\Programming\NDRA\NondescriptRenderingApp\NondescriptRenderApp\NondescriptRenderApp\obj\Debug\NondescriptRenderApp.pdb
