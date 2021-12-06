@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GraphicsApp.Views"
         mc:Ignorable="d"
-        Title="ShellView" Height="600" Width="1000" ResizeMode="NoResize">
+        Title="ShellView" Height="auto" Width="auto" ResizeMode="NoResize">
     <Grid>
+        
+        <!--
+        <DockPanel>
+            <StackPanel x:Name="ShellStackPanel" Orientation="Horizontal" DockPanel.Dock="Left">
+                <DockPanel>
+                    <StackPanel x:Name="UIButtons" Width="200" Height="600">
+                        <TextBlock TextAlignment="Center" Margin="0, 10">Select a Render Shape</TextBlock>
+                        <Button x:Name="RectangleButton" Click="SetShapeRectangle_Click">Rectangle</Button>
+                        <Button x:Name="TriangleButton" Click="SetShapeTriangle_Click">Triangle</Button>
+                        <Button x:Name="EllipseButton" Click="SetShapeEllipse_Click">Ellipse</Button>
+                        <Button x:Name="Hexagon" Click="SetShapeHexagon_Click">Hexagon</Button>
+                        <Button x:Name="Custom" Click="LoadCustomPolygon_Click">Custom</Button>
+                    </StackPanel>
+
+
+                    <Canvas x:Name="RenderCanvas" Background="White" Width="800" Height="600" />
+                </DockPanel>
+            </StackPanel>
+        </DockPanel>
+        -->
+
         <StackPanel Orientation="Horizontal">
             <local:UIView>
                 

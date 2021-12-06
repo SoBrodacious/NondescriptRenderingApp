@@ -1,8 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "yyYKfI9mABxetL8K1Z6RkraxZJzd3LW1yx6qmWa9jovX4qcVXkPdTJhLqtREUjNzMsV+cOt2EiHwQCmNu3yuJg==",
+  "dgSpecHash": "17s7cnBAAz3N/WeFPIG6o5C5T3xatIhkQBCLm0x11CiiuATFC1YUJ9b90OyvrJbBUJ3VP7Tx/HrA1OpG5oXtag==",
   "success": true,
   "projectFilePath": "E:\\Programming\\GraphicsApp\\GraphicsApp\\GraphicsApp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\sajke\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\sajke\\.nuget\\packages\\microsoft.win32.systemevents\\4.5.0\\microsoft.win32.systemevents.4.5.0.nupkg.sha512",
+    "C:\\Users\\sajke\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.31\\microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512",
+    "C:\\Users\\sajke\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512",
+    "C:\\Users\\sajke\\.nuget\\packages\\prism.unity\\8.1.97\\prism.unity.8.1.97.nupkg.sha512",
+    "C:\\Users\\sajke\\.nuget\\packages\\prism.wpf\\8.1.97\\prism.wpf.8.1.97.nupkg.sha512",
+    "C:\\Users\\sajke\\.nuget\\packages\\skiasharp\\2.80.3\\skiasharp.2.80.3.nupkg.sha512",
+    "C:\\Users\\sajke\\.nuget\\packages\\skiasharp.views.desktop.common\\2.80.3\\skiasharp.views.desktop.common.2.80.3.nupkg.sha512",
+    "C:\\Users\\sajke\\.nuget\\packages\\skiasharp.views.wpf\\2.80.3\\skiasharp.views.wpf.2.80.3.nupkg.sha512",
+    "C:\\Users\\sajke\\.nuget\\packages\\system.drawing.common\\4.5.1\\system.drawing.common.4.5.1.nupkg.sha512",
+    "C:\\Users\\sajke\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\sajke\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\sajke\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.2\\system.threading.tasks.extensions.4.5.2.nupkg.sha512",
+    "C:\\Users\\sajke\\.nuget\\packages\\unity.abstractions\\5.11.7\\unity.abstractions.5.11.7.nupkg.sha512",
+    "C:\\Users\\sajke\\.nuget\\packages\\unity.container\\5.11.11\\unity.container.5.11.11.nupkg.sha512"
+  ],
   "logs": []
 }

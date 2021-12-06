@@ -1,0 +1,93 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Windows;
+using System.Windows.Media;
+
+namespace GraphicsApp.Models
+{
+    class ShapeBoundingBox
+    {
+        private double _xMin;
+
+        public double XMin
+        {
+            get { return _xMin; }
+            set { _xMin = value; }
+        }
+
+        private double _xMax;
+
+        public double XMax
+        {
+            get { return _xMax; }
+            set { _xMax = value; }
+        }
+
+        private double _yMin;
+
+        public double YMin
+        {
+            get { return _yMin; }
+            set { _yMin = value; }
+        }
+
+        private double _yMax;
+
+        public double YMax
+        {
+            get { return _yMax; }
+            set { _yMax = value; }
+        }
+
+        public ShapeBoundingBox()
+        {
+
+        }
+
+        //Prefered constructor, take in point collection, generate bounds from it, ready to use
+        public ShapeBoundingBox(PointCollection points)
+        {
+            GenerateBounds(points);
+        }
+
+        private void GenerateBounds(PointCollection points)
+        {
+            if(points != null && points.Count > 0)
+            {
+                XMin = points[0].X;
+                XMax = points[0].X;
+                YMin = points[0].Y;
+                YMax = points[0].Y;
+
+                foreach(Point p in points)
+                {
+                    if (p.X < XMin) XMin = p.X;
+                    if (p.X > XMax) XMax = p.X;
+                    if (p.Y < YMin) YMin = p.Y;
+                    if (p.Y > YMax) YMax = p.Y;
+                }
+            }
+            else
+            {
+                throw new Exception("InvalidPointCollection");
+            }
+        }
+
+        //Return the centre of this bounding box for rendering to centre needs
+        public Point GetBBCentre()
+        {
+            return new Point(GetXCentre(), GetYCentre());
+        }
+
+        public double GetXCentre() 
+        { 
+            return (XMax - XMin) / 2.0;
+        }
+
+        public double GetYCentre()
+        {
+            return (YMax - YMin) / 2.0;
+        }
+    }
+}

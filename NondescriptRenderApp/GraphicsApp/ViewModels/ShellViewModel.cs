@@ -1,14 +1,19 @@
-﻿using System;
+﻿using Prism.Mvvm;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
+using System.Windows.Controls;
 
 namespace GraphicsApp.ViewModels
 {
-    class ShellViewModel : INotifyPropertyChanged
+    public class ShellViewModel : BindableBase
     {
 
+        public ShellViewModel()
+        {
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        }
+
     }
 }

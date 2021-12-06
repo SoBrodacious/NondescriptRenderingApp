@@ -10,9 +10,6 @@
     <Compile Update="Views\GraphicsCanvasView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\GraphicsWindow.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Views\ShellView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -21,13 +18,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="MainWindow.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="Views\GraphicsCanvasView.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Views\GraphicsWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\ShellView.xaml">

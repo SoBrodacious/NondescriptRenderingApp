@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GraphicsApp.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -18,14 +19,11 @@ namespace GraphicsApp.Views
     /// </summary>
     public partial class UIView : UserControl
     {
+
         public UIView()
         {
             InitializeComponent();
-        }
-
-        private void addRectangle_Click(object sender, RoutedEventArgs e)
-        {
-            
+            this.DataContext = new UIViewModel();
         }
     }
 }
