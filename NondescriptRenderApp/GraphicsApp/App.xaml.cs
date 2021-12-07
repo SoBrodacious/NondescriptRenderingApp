@@ -18,7 +18,7 @@ namespace GraphicsApp
     {
         protected override Window CreateShell()
         {
-            var w = Container.Resolve<ShellView>();
+            var w = Container.Resolve<Shell>();
             return w;
         }
 

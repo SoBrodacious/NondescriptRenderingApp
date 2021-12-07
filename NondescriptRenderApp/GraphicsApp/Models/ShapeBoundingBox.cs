@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows;
 using System.Windows.Media;
+using System.Windows.Shapes;
 
 namespace GraphicsApp.Models
 {
@@ -40,9 +41,9 @@ namespace GraphicsApp.Models
             set { _yMax = value; }
         }
 
-        public ShapeBoundingBox()
+        public ShapeBoundingBox(Ellipse ellipse)
         {
-
+            //GenerateBounds(ellipse);
         }
 
         //Prefered constructor, take in point collection, generate bounds from it, ready to use

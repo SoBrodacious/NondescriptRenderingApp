@@ -9,6 +9,8 @@ using System.Windows.Shapes;
 using Prism.Mvvm;
 using Prism.Commands;
 using GraphicsApp.Models;
+using Prism.Events;
+using System.Diagnostics;
 
 namespace GraphicsApp.ViewModels
 {
@@ -16,8 +18,12 @@ namespace GraphicsApp.ViewModels
     {
         private GraphicsCanvasModel graphicsCanvasModel;
 
-        public GraphicsCanvasViewModel()
+        IEventAggregator _ea;
+
+        public GraphicsCanvasViewModel(IEventAggregator ea)
         {
+            _ea = ea;
+            ea.GetEvent<UIShapeUpdateEvent>().Subscribe(MessageRecieved);
             graphicsCanvasModel = new GraphicsCanvasModel();
         }
 
@@ -29,6 +35,14 @@ namespace GraphicsApp.ViewModels
                 SetProperty(ref graphicsCanvasModel, value);
             }
         }
+
+        private void MessageRecieved(Shape parameter)
+        {
+            Debug.WriteLine("GCVM MessageRecieved");
+            
+        }
+
+
 
         //private void CodeDump()
         //{

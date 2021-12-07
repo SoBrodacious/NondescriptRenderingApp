@@ -4,14 +4,9 @@ E:\Programming\GraphicsApp\GraphicsApp\bin\Debug\netcoreapp3.1\GraphicsApp.runti
 E:\Programming\GraphicsApp\GraphicsApp\bin\Debug\netcoreapp3.1\GraphicsApp.runtimeconfig.dev.json
 E:\Programming\GraphicsApp\GraphicsApp\bin\Debug\netcoreapp3.1\GraphicsApp.dll
 E:\Programming\GraphicsApp\GraphicsApp\bin\Debug\netcoreapp3.1\GraphicsApp.pdb
-E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\GraphicsApp.csprojAssemblyReference.cache
-E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\Views\ShellView.g.cs
-E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\Views\UIView.g.cs
 E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\App.g.cs
 E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\GraphicsApp_MarkupCompile.cache
 E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\GraphicsApp_MarkupCompile.lref
-E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\Views\ShellView.baml
-E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\Views\UIView.baml
 E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\GraphicsApp.g.resources
 E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\GraphicsApp.AssemblyInfoInputs.cache
 E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\GraphicsApp.AssemblyInfo.cs
@@ -19,8 +14,6 @@ E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\GraphicsApp.cspro
 E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\GraphicsApp.dll
 E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\GraphicsApp.pdb
 E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\GraphicsApp.genruntimeconfig.cache
-E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\Views\GraphicsCanvasView.g.cs
-E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\Views\GraphicsCanvasView.baml
 E:\Programming\GraphicsApp\GraphicsApp\bin\Debug\netcoreapp3.1\Microsoft.Xaml.Behaviors.dll
 E:\Programming\GraphicsApp\GraphicsApp\bin\Debug\netcoreapp3.1\SkiaSharp.dll
 E:\Programming\GraphicsApp\GraphicsApp\bin\Debug\netcoreapp3.1\SkiaSharp.Views.Desktop.Common.dll
@@ -36,3 +29,10 @@ E:\Programming\GraphicsApp\GraphicsApp\bin\Debug\netcoreapp3.1\Prism.Wpf.dll
 E:\Programming\GraphicsApp\GraphicsApp\bin\Debug\netcoreapp3.1\Unity.Abstractions.dll
 E:\Programming\GraphicsApp\GraphicsApp\bin\Debug\netcoreapp3.1\Unity.Container.dll
 E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\Views\GraphicsCanvas.g.cs
+E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\Views\Shell.g.cs
+E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\Views\GraphicsCanvas.baml
+E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\Views\GraphicsUI.g.cs
+E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\Views\Shell.baml
+E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\Views\GraphicsUI.baml
+E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\GraphicsApp.csprojAssemblyReference.cache

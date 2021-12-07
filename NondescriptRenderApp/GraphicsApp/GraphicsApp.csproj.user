@@ -7,24 +7,24 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Views\GraphicsCanvasView.xaml.cs">
+    <Compile Update="Views\GraphicsCanvas.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\ShellView.xaml.cs">
+    <Compile Update="Views\Shell.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\UIView.xaml.cs">
+    <Compile Update="Views\GraphicsUI.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Views\GraphicsCanvasView.xaml">
+    <Page Update="Views\GraphicsCanvas.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\ShellView.xaml">
+    <Page Update="Views\Shell.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\UIView.xaml">
+    <Page Update="Views\GraphicsUI.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -61,7 +61,7 @@ namespace GraphicsApp.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GraphicsApp;V1.0.0.0;component/views/graphicscanvasview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GraphicsApp;component/views/graphicscanvasview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\GraphicsCanvasView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

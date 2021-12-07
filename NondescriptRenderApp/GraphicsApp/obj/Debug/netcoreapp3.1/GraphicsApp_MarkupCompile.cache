@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 E:\Programming\GraphicsApp\GraphicsApp\App.xaml
-31685363813
+3-577292815
 
-162013484958
+19-1888802737
 2021428590593
-Views\GraphicsCanvasView.xaml;Views\ShellView.xaml;Views\UIView.xaml;
+Views\GraphicsCanvas.xaml;Views\GraphicsUI.xaml;Views\Shell.xaml;
 
 False
 
