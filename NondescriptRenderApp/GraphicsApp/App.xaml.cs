@@ -21,7 +21,6 @@ namespace GraphicsApp
             var w = Container.Resolve<Shell>();
             return w;
         }
-
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             //throw new NotImplementedException();

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\Programming\GraphicsApp\GraphicsApp\obj\Debug\netcoreapp3.1\
+E:\Programming\GraphicsAppRebuild\GraphicsApp\obj\Debug\netcoreapp3.1\
 GraphicsApp
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
-E:\Programming\GraphicsApp\GraphicsApp\App.xaml
-31685363813
+E:\Programming\GraphicsAppRebuild\GraphicsApp\App.xaml
+51470617685
 
-21498478516
-2021428590593
-Views\GraphicsCanvasView.xaml;Views\ShellView.xaml;Views\UIView.xaml;
+221053335100
+1981415559859
+MainWindow.xaml;Views\GraphicsCanvas.xaml;Views\GraphicsUI.xaml;Views\ShapeSelector.xaml;Views\Shell.xaml;
 
 False
 

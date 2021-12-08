@@ -1,87 +1,107 @@
-﻿using System;
+﻿using GraphicsApp.Events;
+using GraphicsApp.ShapeDefinitions;
+using GraphicsApp.ShapeUtility;
+using Prism.Events;
+using Prism.Mvvm;
+using System;
 using System.Collections.Generic;
-using System.Windows;
+using System.Diagnostics;
 using System.Text;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using System.Windows.Media.Animation;
 using System.Windows.Shapes;
-using Prism.Mvvm;
-using Prism.Commands;
-using GraphicsApp.Models;
-using Prism.Events;
-using System.Diagnostics;
 
 namespace GraphicsApp.ViewModels
 {
-    public class GraphicsCanvasViewModel : BindableBase
+    class GraphicsCanvasViewModel : BindableBase
     {
-        private GraphicsCanvasModel graphicsCanvasModel;
+        private PolygonBuilder polygonBuilder = new PolygonBuilder();
+        private EllipseBuilder ellipseBuilder = new EllipseBuilder();
+        private XMLLoader loader = new XMLLoader();
 
-        IEventAggregator _ea;
+        private Shape _renderShape;
 
-        public GraphicsCanvasViewModel(IEventAggregator ea)
+        public Shape RenderShape
         {
-            _ea = ea;
-            ea.GetEvent<UIShapeUpdateEvent>().Subscribe(MessageRecieved);
-            graphicsCanvasModel = new GraphicsCanvasModel();
-        }
-
-        public GraphicsCanvasModel GraphicsCanvasModel
-        {
-            get { return graphicsCanvasModel; }
+            get { return _renderShape; }
             set
             {
-                SetProperty(ref graphicsCanvasModel, value);
+                SetProperty(ref _renderShape, value);
             }
         }
 
-        private void MessageRecieved(Shape parameter)
+        //Test polygon bound through content control
+        private Polygon _renderPolygon;
+        public Polygon RenderPolygon
         {
-            Debug.WriteLine("GCVM MessageRecieved");
-            
+            get { return _renderPolygon; }
+            set
+            {
+                _renderPolygon = value;
+            }
+        }
+
+        private Ellipse _renderEllipse;
+
+        public Ellipse RenderEllipse
+        {
+            get { return _renderEllipse; }
+            set { _renderEllipse = value; }
         }
 
 
 
-        //private void CodeDump()
-        //{
-        //    _currentPolygon = new Polygon();
+        public GraphicsCanvasViewModel(IEventAggregator ea)
+        {
+            ea.GetEvent<UISetShapeUpdate>().Subscribe(ListenUISetShape);
 
-        //    SolidColorBrush yellowBrush = new SolidColorBrush();
-        //    yellowBrush.Color = Colors.Yellow;
-        //    SolidColorBrush blackBrush = new SolidColorBrush();
-        //    blackBrush.Color = Colors.Black;
+            _renderPolygon = new Polygon();
 
-        //    _currentPolygon.Stroke = blackBrush;
-        //    _currentPolygon.Fill = yellowBrush;
-        //    _currentPolygon.StrokeThickness = 4;
+            SolidColorBrush yellowBrush = new SolidColorBrush();
+            yellowBrush.Color = Colors.Yellow;
+            SolidColorBrush blackBrush = new SolidColorBrush();
+            blackBrush.Color = Colors.Black;
 
-        //    PointCollection points = new PointCollection();
-        //    Point p1 = new Point(0, 0);
-        //    Point p2 = new Point(0, 20);
-        //    Point p3 = new Point(40, 20);
-        //    points.Add(p1);
-        //    points.Add(p2);
-        //    points.Add(p3);
+            PointCollection points = new PointCollection();
+            Point p1 = new Point(0, 0);
+            Point p2 = new Point(0, 20);
+            Point p3 = new Point(40, 20);
+            points.Add(p1);
+            points.Add(p2);
+            points.Add(p3);
 
-        //    _currentPolygon.Points = points;
+            _renderPolygon.Points = points;
+            _renderPolygon.Stroke = blackBrush;
+            _renderPolygon.Fill = yellowBrush;
+            _renderPolygon.StrokeThickness = 4;
 
-        //    TranslateTransform ttf = new TranslateTransform();
-        //    ttf.X = 500;
-        //    ttf.Y = 500;
+            RenderShape = RenderPolygon;
+        }
 
-        //    //_polygon.RenderTransform = ttf;
+        private void ListenUISetShape(string obj)
+        {
+            loader.LoadShapeFromXML(obj);
 
-        //    DoubleAnimation doubleAnimationX = new DoubleAnimation();
-        //    //DoubleAnimation doubleAnimationY = new DoubleAnimation();
-        //    doubleAnimationX.From = 0;
-        //    doubleAnimationX.To = 500;
-        //    doubleAnimationX.Duration = new Duration(TimeSpan.FromSeconds(10));
+            switch (obj)
+            {
+                case "Rectangle":
+                    RenderShape = polygonBuilder.Build(loader.XmlShape);
+                    break;
+                case "Triangle":
+                    RenderShape = polygonBuilder.Build(loader.XmlShape);
+                    break;
+                case "Ellipse":
+                    RenderShape = ellipseBuilder.Build(loader.XmlShape);
+                    break;
+                case "Hexagon":
+                    RenderShape = polygonBuilder.Build(loader.XmlShape);
+                    break;
+                default:
+                    Debug.WriteLine("Whoops, no definition for " + obj + " in GraphicsCanvasVM");
+                    break;
+            }
+        }
 
-        //    _currentPolygon.BeginAnimation(Canvas.LeftProperty, doubleAnimationX);
-
-        //    RenderCanvas.Children.Add(_currentPolygon);
-        //}
     }
 }

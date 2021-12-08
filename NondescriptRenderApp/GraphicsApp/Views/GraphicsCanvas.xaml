@@ -7,28 +7,32 @@
              xmlns:prism="http://prismlibrary.com/"
              prism:ViewModelLocator.AutoWireViewModel="True"
              mc:Ignorable="d" 
-             d:DesignHeight="600" d:DesignWidth="800">
-    
+             d:DesignHeight="450" d:DesignWidth="800">
+
     <!-- Resources -->
     <UserControl.Resources>
         <DataTemplate x:Key="polygonTemplate">
-            <Polygon
-                Points="{Binding}"
-                Stroke="{Binding}"
-                Fill="{Binding}" />
+            <ContentControl
+                Content="{Binding RenderPolygon}"/>
         </DataTemplate>
 
         <DataTemplate x:Key="ellipseTemplate">
             <Ellipse>
             </Ellipse>
         </DataTemplate>
+
+        <!--
+        <utility:ShapeTemplateSelector x:Key="shapeTemplateSelector"
+                                       PolygonTemplate="{StaticResource polygonTemplate}"
+                                       EllipseTemplate="{StaticResource ellipseTemplate}" />
+        -->
     </UserControl.Resources>
     
     <!-- View -->
     <Grid>
         <Canvas x:Name="RenderCanvas" Background="White" Width="800" Height="600" >
-            <ContentControl
-                ContentTemplateSelector="{StaticResource }"
+            <ContentControl 
+                Content="{Binding RenderShape}"/>
         </Canvas>
     </Grid>
 </UserControl>

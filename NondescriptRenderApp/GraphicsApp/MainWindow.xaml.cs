@@ -1,5 +1,4 @@
-﻿using GraphicsApp.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,28 +20,9 @@ namespace GraphicsApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        MainViewModel _main = new MainViewModel();
-
         public MainWindow()
         {
             InitializeComponent();
-
-            DataContext = _main;
-        }
-
-        private void redButton_Click(object sender, RoutedEventArgs e)
-        {
-            _main.SetBackground(Brushes.Red);
-        }
-
-        private void blueButton_Click(object sender, RoutedEventArgs e)
-        {
-            _main.SetBackground(Brushes.Blue);
-        }
-
-        private void yellowButton_Click(object sender, RoutedEventArgs e)
-        {
-            _main.SetBackground(Brushes.Yellow);
         }
     }
 }

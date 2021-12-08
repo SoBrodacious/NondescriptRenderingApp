@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<polygon
+  xmlns="http://tempuri.org/Polygon.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://tempuri.org/Polygon.xsd Polygon.xsd"
+  >
+  <polygonName>Rectangle</polygonName>
+  <points>
+    <point>
+      <x>0</x>
+      <y>0</y>
+    </point>
+    <point>
+      <x>30</x>
+      <y>0</y>
+    </point>
+    <point>
+      <x>30</x>
+      <y>30</y>
+    </point>
+    <point>
+      <x>0</x>
+      <y>30</y>
+    </point>
+  </points>
+  <strokeWeight>3</strokeWeight>
+  <strokeColor>
+    <r>0</r>
+    <g>0</g>
+    <b>0</b>
+  </strokeColor>
+  <fillColor>
+    <r>255</r>
+    <g>0</g>
+    <b>0</b>
+  </fillColor>
+</polygon>
+  

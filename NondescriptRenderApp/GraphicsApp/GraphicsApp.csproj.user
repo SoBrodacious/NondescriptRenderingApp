@@ -10,21 +10,35 @@
     <Compile Update="Views\GraphicsCanvas.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Shell.xaml.cs">
+    <Compile Update="Views\GraphicsUI.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\GraphicsUI.xaml.cs">
+    <Compile Update="Views\ShapeSelector.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Shell.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Update="ShapeDefinitions\Polygon.xsd">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\GraphicsCanvas.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Shell.xaml">
+    <Page Update="Views\GraphicsUI.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\GraphicsUI.xaml">
+    <Page Update="Views\ShapeSelector.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Shell.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

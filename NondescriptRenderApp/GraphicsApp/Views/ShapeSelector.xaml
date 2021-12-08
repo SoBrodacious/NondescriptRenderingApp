@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="GraphicsApp.Views.ShapeSelector"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GraphicsApp.Views"
+             xmlns:prism="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="200">
+    <Grid>
+        <StackPanel Width="200">
+            <TextBlock TextAlignment="Center" Margin="0, 10">Select a Render Shape</TextBlock>
+            <Button Command="{Binding CommandSetShape}" CommandParameter="Rectangle" Content="Rectangle" />
+            <Button Command="{Binding CommandSetShape}" CommandParameter="Triangle" Content="Triangle" />
+            <Button Command="{Binding CommandSetShape}" CommandParameter="Ellipse" Content="Ellipse" />
+            <Button Command="{Binding CommandSetShape}" CommandParameter="Hexagon" Content="Hexagon" />
+            <!--
+            <Button Command="{Binding SetShapeCommand}" CommandParameter="custom" Content="Custom Polygon" />
+            -->
+        </StackPanel>
+    </Grid>
+</UserControl>

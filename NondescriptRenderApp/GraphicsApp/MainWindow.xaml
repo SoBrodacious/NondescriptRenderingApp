@@ -5,19 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GraphicsApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
-    <Grid Background="{Binding Background.Color}">
-        <DockPanel LastChildFill="false">
-            <StackPanel Width="150" DockPanel.Dock="Top">
-                <TextBlock Text="{Binding Person.Name, StringFormat=Welcome {0}}"/>
-                <TextBox Text="{Binding Person.Name, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"/>
-                <Button Content="Submit"/>
-            </StackPanel>
-            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" DockPanel.Dock="Bottom">
-                <Button x:Name="redButton" Click="redButton_Click">Red Background</Button>
-                <Button x:Name="blueButton" Click="blueButton_Click">Blue Background</Button>
-                <Button x:Name="yellowButton" Click="yellowButton_Click">Yellow Background</Button>
-            </StackPanel>
-        </DockPanel>
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
     </Grid>
 </Window>

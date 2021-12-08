@@ -1,6 +1,4 @@
-﻿using GraphicsApp.ViewModels;
-using Prism.Events;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -16,11 +14,10 @@ using System.Windows.Shapes;
 namespace GraphicsApp.Views
 {
     /// <summary>
-    /// Interaction logic for UIView.xaml
+    /// Interaction logic for GraphicsUI.xaml
     /// </summary>
     public partial class GraphicsUI : UserControl
     {
-
         public GraphicsUI()
         {
             InitializeComponent();

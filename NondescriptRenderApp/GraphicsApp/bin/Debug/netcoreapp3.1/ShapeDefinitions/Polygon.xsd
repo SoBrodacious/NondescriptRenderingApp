@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Polygon"
+    targetNamespace="http://tempuri.org/Polygon.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/Polygon.xsd"
+    xmlns:mstns="http://tempuri.org/Polygon.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:element name="polygon" type="polygonType" />
+
+  <xs:complexType name="polygonType">
+    <xs:all>
+      <xs:element name="polygonName" type="xs:string" />
+      <xs:element name="points" type="pointsType" />
+      <xs:element name="strokeWeight">
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="strokeColor" type="colorType" />
+      <xs:element name="fillColor" type="colorType" />
+    </xs:all>
+  </xs:complexType>
+
+  <!-- Points -->
+  <xs:complexType name="pointType">
+    <xs:all>
+      <xs:element name="x" type="xs:double" />
+      <xs:element name="y" type="xs:double" />
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="pointsType">
+    <xs:sequence minOccurs="3" maxOccurs="unbounded">
+      <xs:element name="point" type="pointType" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Color -->
+  <xs:complexType name="colorType">
+    <xs:all>
+      <xs:element name="r">
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="255" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="g">
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="255" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="b">
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="255" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  
+  
+</xs:schema>

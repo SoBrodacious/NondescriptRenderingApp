@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphicsApp", "GraphicsApp.csproj", "{20B695F3-40AC-4316-9AF1-14A284E46E85}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphicsApp", "GraphicsApp.csproj", "{0A0E7211-C6A5-4904-9325-7499662D86CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{20B695F3-40AC-4316-9AF1-14A284E46E85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{20B695F3-40AC-4316-9AF1-14A284E46E85}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{20B695F3-40AC-4316-9AF1-14A284E46E85}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{20B695F3-40AC-4316-9AF1-14A284E46E85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A0E7211-C6A5-4904-9325-7499662D86CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A0E7211-C6A5-4904-9325-7499662D86CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A0E7211-C6A5-4904-9325-7499662D86CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A0E7211-C6A5-4904-9325-7499662D86CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {89CA0288-7D7B-4B61-B01B-A7E471D58E08}
+		SolutionGuid = {CAB2AD05-C30E-4A10-8541-51D23E32989A}
 	EndGlobalSection
 EndGlobal

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Programming\\GraphicsApp\\GraphicsApp\\GraphicsApp.csproj": {}
+    "E:\\Programming\\GraphicsAppRebuild\\GraphicsApp\\GraphicsApp.csproj": {}
   },
   "projects": {
-    "E:\\Programming\\GraphicsApp\\GraphicsApp\\GraphicsApp.csproj": {
+    "E:\\Programming\\GraphicsAppRebuild\\GraphicsApp\\GraphicsApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Programming\\GraphicsApp\\GraphicsApp\\GraphicsApp.csproj",
+        "projectUniqueName": "E:\\Programming\\GraphicsAppRebuild\\GraphicsApp\\GraphicsApp.csproj",
         "projectName": "GraphicsApp",
-        "projectPath": "E:\\Programming\\GraphicsApp\\GraphicsApp\\GraphicsApp.csproj",
+        "projectPath": "E:\\Programming\\GraphicsAppRebuild\\GraphicsApp\\GraphicsApp.csproj",
         "packagesPath": "C:\\Users\\sajke\\.nuget\\packages\\",
-        "outputPath": "E:\\Programming\\GraphicsApp\\GraphicsApp\\obj\\",
+        "outputPath": "E:\\Programming\\GraphicsAppRebuild\\GraphicsApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sajke\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -51,14 +51,6 @@
             "Prism.Wpf": {
               "target": "Package",
               "version": "[8.1.97, )"
-            },
-            "SkiaSharp": {
-              "target": "Package",
-              "version": "[2.80.3, )"
-            },
-            "SkiaSharp.Views.WPF": {
-              "target": "Package",
-              "version": "[2.80.3, )"
             }
           },
           "imports": [
