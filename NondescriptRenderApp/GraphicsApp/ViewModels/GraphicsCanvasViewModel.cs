@@ -13,6 +13,7 @@ using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 
 namespace GraphicsApp.ViewModels
 {
@@ -130,9 +131,58 @@ namespace GraphicsApp.ViewModels
                     ResetShapeToCenter();
                     break;
                 default:
-                    //Debug.WriteLine("Whoops, no definition for " + obj + " in GraphicsCanvasVM, too bad!");
+                    //Very scuffed way to handle this but I need to go to bed, too bad!
+                    
+
+                    string polyName = TryLoadPolyName();
+                    string ellipseName = TryLoadEllipseName();
+
+
+                    if(polyName != null)
+                    {
+                        RenderShape = polygonBuilder.Build(loader.XmlShape);
+                        ResetShapeToCenter();
+                    }
+                    else if(ellipseName != null)
+                    {
+                        RenderShape = ellipseBuilder.Build(loader.XmlShape);
+                        ResetShapeToCenter();
+                    }
+                    else
+                    {
+                        Debug.WriteLine("Whoops, no definition for that shape name in definitions, too bad!");
+                    }
                     break;
             }
+        }
+
+        private string TryLoadPolyName()
+        {
+            string polyName = null;
+            XNamespace ns = "http://tempuri.org/Ellipse.xsd";
+            try
+            {
+                polyName = loader.XmlShape.Element(ns + "polygonName").Value;
+            }
+            catch
+            {
+                return null;
+            }
+            return polyName;
+        }
+        private string TryLoadEllipseName()
+        {
+            string ellipseName = null;
+            XNamespace ns = "http://tempuri.org/Ellipse.xsd";
+            try
+            {
+                ellipseName = loader.XmlShape.Element(ns + "ellipseName").Value;
+            }
+            catch
+            {
+                return null;
+            }
+            return ellipseName;
         }
 
         private void ResetShapeToCenter()

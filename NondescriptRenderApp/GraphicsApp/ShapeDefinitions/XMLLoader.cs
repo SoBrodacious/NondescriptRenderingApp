@@ -59,5 +59,22 @@ namespace GraphicsApp.ShapeDefinitions
             //}
         }
 
+        public string GetShapeType()
+        {
+            string s = null;
+
+            try
+            {
+                s = XmlShape.FirstAttribute.Name.LocalName;
+                Debug.WriteLine(s);
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(String.Format("Invalid name for loading shape"));
+            }
+
+            return s;
+        }
+
     }
 }

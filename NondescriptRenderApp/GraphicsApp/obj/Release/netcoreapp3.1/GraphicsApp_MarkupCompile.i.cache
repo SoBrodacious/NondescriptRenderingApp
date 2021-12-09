@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\Programming\GraphicsAppRebuild\GraphicsApp\obj\Release\netcoreapp3.1\
+E:\Programming\NDRA\NondescriptRenderingApp\NondescriptRenderApp\GraphicsApp\obj\Release\netcoreapp3.1\
 GraphicsApp
 none
 false
 TRACE;RELEASE;NETCOREAPP;NETCOREAPP3_1;
-E:\Programming\GraphicsAppRebuild\GraphicsApp\App.xaml
+E:\Programming\NDRA\NondescriptRenderingApp\NondescriptRenderApp\GraphicsApp\App.xaml
 6-1756149253
 
 26-632551572
 1981415559859
 MainWindow.xaml;Views\AnimationSelector.xaml;Views\GraphicsCanvas.xaml;Views\GraphicsUI.xaml;Views\ShapeSelector.xaml;Views\Shell.xaml;
 
-False
+True
 

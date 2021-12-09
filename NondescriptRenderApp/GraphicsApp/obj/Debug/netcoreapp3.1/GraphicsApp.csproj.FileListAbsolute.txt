@@ -84,3 +84,4 @@ E:\Programming\NDRA\NondescriptRenderingApp\NondescriptRenderApp\GraphicsApp\obj
 E:\Programming\NDRA\NondescriptRenderingApp\NondescriptRenderApp\GraphicsApp\obj\Debug\netcoreapp3.1\GraphicsApp.dll
 E:\Programming\NDRA\NondescriptRenderingApp\NondescriptRenderApp\GraphicsApp\obj\Debug\netcoreapp3.1\GraphicsApp.pdb
 E:\Programming\NDRA\NondescriptRenderingApp\NondescriptRenderApp\GraphicsApp\obj\Debug\netcoreapp3.1\GraphicsApp.genruntimeconfig.cache
+E:\Programming\NDRA\NondescriptRenderingApp\NondescriptRenderApp\GraphicsApp\bin\Debug\netcoreapp3.1\ShapeDefinitions\WideCircle.xml

@@ -1,0 +1,17 @@
+E:\RenderApp\GraphicsApp.exe
+E:\RenderApp\ShapeDefinitions\Circle.xml
+E:\RenderApp\ShapeDefinitions\Hexagon.xml
+E:\RenderApp\ShapeDefinitions\Rectangle.xml
+E:\RenderApp\ShapeDefinitions\Triangle.xml
+E:\RenderApp\ShapeDefinitions\Ellipse.xsd
+E:\RenderApp\ShapeDefinitions\Polygon.xsd
+E:\RenderApp\GraphicsApp.dll
+E:\RenderApp\GraphicsApp.deps.json
+E:\RenderApp\GraphicsApp.runtimeconfig.json
+E:\RenderApp\GraphicsApp.pdb
+E:\RenderApp\Microsoft.Xaml.Behaviors.dll
+E:\RenderApp\Prism.dll
+E:\RenderApp\Prism.Unity.Wpf.dll
+E:\RenderApp\Prism.Wpf.dll
+E:\RenderApp\Unity.Abstractions.dll
+E:\RenderApp\Unity.Container.dll
