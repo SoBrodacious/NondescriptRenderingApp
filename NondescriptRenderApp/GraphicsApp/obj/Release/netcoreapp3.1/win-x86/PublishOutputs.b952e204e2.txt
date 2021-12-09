@@ -3,6 +3,7 @@ E:\RenderApp\ShapeDefinitions\Circle.xml
 E:\RenderApp\ShapeDefinitions\Hexagon.xml
 E:\RenderApp\ShapeDefinitions\Rectangle.xml
 E:\RenderApp\ShapeDefinitions\Triangle.xml
+E:\RenderApp\ShapeDefinitions\WideCircle.xml
 E:\RenderApp\ShapeDefinitions\Ellipse.xsd
 E:\RenderApp\ShapeDefinitions\Polygon.xsd
 E:\RenderApp\GraphicsApp.dll

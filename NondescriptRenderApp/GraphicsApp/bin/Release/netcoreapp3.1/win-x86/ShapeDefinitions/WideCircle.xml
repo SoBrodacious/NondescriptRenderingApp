@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ellipse
+  xmlns="http://tempuri.org/Ellipse.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://tempuri.org/Ellipse.xsd Ellipse.xsd"
+  >
+  <ellipseName>Circle</ellipseName>
+  <dimensions>
+    <width>60</width>
+    <height>30</height>
+  </dimensions>
+  <strokeWeight>3</strokeWeight>
+  <strokeColor>
+    <r>0</r>
+    <g>0</g>
+    <b>0</b>
+  </strokeColor>
+  <fillColor>
+    <r>180</r>
+    <g>60</g>
+    <b>180</b>
+  </fillColor>
+</ellipse>

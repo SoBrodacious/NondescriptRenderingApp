@@ -1,6 +1,12 @@
 # Nondescript Rendering App
 A simple WPF App that can draw shapes to a canvas
 
+To Build
+Publish from Visual Studio, targeting a local release and your preferred runtime, leave "produce single file" off, otherwise shape definitions break, and the program won't be able to render anything
+
+To Edit Shapes
+Please look in the solution or the build for the folder /ShapeDefinitions, inside here are example xml files for shapes, as well as the schema. Do not leave the name attribute empty, despite it not being used in the application at this point, this can cause custom shapes to break on load.
+
 ## Contents
 1. [Goal](#goal)
 2. [Accomplished](#accomplished)
