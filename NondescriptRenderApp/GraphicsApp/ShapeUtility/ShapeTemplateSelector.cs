@@ -7,6 +7,9 @@ using System.Windows.Shapes;
 
 namespace GraphicsApp.ShapeUtility
 {
+    /*
+     * implementation of datatemplate selector, idea was to use this to define polygon vs ellipse for canvas content, temp workaround is to use a generic shape for the moment
+     */
     class ShapeTemplateSelector : DataTemplateSelector
     {
         public DataTemplate PolygonTemplate { get; set; }

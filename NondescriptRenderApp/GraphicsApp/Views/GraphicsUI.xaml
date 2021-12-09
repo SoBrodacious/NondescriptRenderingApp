@@ -11,7 +11,8 @@
     <Grid>
         <StackPanel x:Name="UIOuterPanel" Width="200" Height="600">
             <local:ShapeSelector />
-            
+            <local:AnimationSelector />
+
             <!--
             <StackPanel x:Name="UIAnimation">
                 <TextBlock TextAlignment="Center" Margin="0, 10">Select an Animation</TextBlock>

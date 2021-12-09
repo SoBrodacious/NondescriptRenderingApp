@@ -30,8 +30,8 @@
     
     <!-- View -->
     <Grid>
-        <Canvas x:Name="RenderCanvas" Background="White" Width="800" Height="600" >
-            <ContentControl 
+        <Canvas x:Name="RenderCanvas" Background="White" Width="{Binding Width}" Height="{Binding Height}" >
+            <ContentControl x:Name="Moveable" 
                 Content="{Binding RenderShape}"/>
         </Canvas>
     </Grid>

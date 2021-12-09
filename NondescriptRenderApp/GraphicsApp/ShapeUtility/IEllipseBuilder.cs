@@ -6,6 +6,9 @@ using System.Xml.Linq;
 
 namespace GraphicsApp.ShapeUtility
 {
+    /*
+     * interface for ellipse build specific methods
+     */
     interface IEllipseBuilder : IShapeBuilder
     {
         public void SetWidth(double width);

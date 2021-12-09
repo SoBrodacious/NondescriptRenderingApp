@@ -340,11 +340,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Programming\\GraphicsAppRebuild\\GraphicsApp\\GraphicsApp.csproj",
+      "projectUniqueName": "E:\\Programming\\NDRA\\NondescriptRenderingApp\\NondescriptRenderApp\\GraphicsApp\\GraphicsApp.csproj",
       "projectName": "GraphicsApp",
-      "projectPath": "E:\\Programming\\GraphicsAppRebuild\\GraphicsApp\\GraphicsApp.csproj",
+      "projectPath": "E:\\Programming\\NDRA\\NondescriptRenderingApp\\NondescriptRenderApp\\GraphicsApp\\GraphicsApp.csproj",
       "packagesPath": "C:\\Users\\sajke\\.nuget\\packages\\",
-      "outputPath": "E:\\Programming\\GraphicsAppRebuild\\GraphicsApp\\obj\\",
+      "outputPath": "E:\\Programming\\NDRA\\NondescriptRenderingApp\\NondescriptRenderApp\\GraphicsApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sajke\\AppData\\Roaming\\NuGet\\NuGet.Config",

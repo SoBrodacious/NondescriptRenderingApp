@@ -7,6 +7,9 @@ using System.Xml.Linq;
 
 namespace GraphicsApp.ShapeUtility
 {
+    /*
+     * interface for polygon build specific methods
+     */
     interface IPolygonBuilder : IShapeBuilder
     {
         public void SetPoints(PointCollection points);

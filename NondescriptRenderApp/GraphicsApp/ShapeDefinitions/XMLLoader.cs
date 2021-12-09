@@ -7,10 +7,12 @@ using System.Xml.Linq;
 
 namespace GraphicsApp.ShapeDefinitions
 {
+    /*
+     * unfamiliar with xml, offloaded general loading behaviour to utility class, handling reading in and parsing specific elements to shapebuilders
+     */
     public class XMLLoader
     {
         private XElement _xmlShape;
-
         public XElement XmlShape
         {
             get { return _xmlShape; }
@@ -18,7 +20,6 @@ namespace GraphicsApp.ShapeDefinitions
         }
 
         private XDocument _xDocument;
-
         public XDocument XDocument
         {
             get { return _xDocument; }
@@ -35,8 +36,16 @@ namespace GraphicsApp.ShapeDefinitions
         {
             string path = String.Format("ShapeDefinitions/{0}.xml", name);
 
-            XmlShape = XElement.Load(@path);
-            Debug.WriteLine(XmlShape);
+            try
+            {
+                XmlShape = XElement.Load(@path);
+                //Debug.WriteLine(XmlShape);
+            }
+            catch(Exception e)
+            {
+                Debug.WriteLine(String.Format("No xml definition for {0}", name));
+            }
+
 
             //XNamespace ns = "http://tempuri.org/Polygon.xsd";
             //XName test = XmlShape.Name.Namespace + "polygonName";

@@ -5,10 +5,14 @@ using System.Windows;
 using System.Windows.Media;
 using System.Windows.Shapes;
 
-namespace GraphicsApp.Models
+namespace GraphicsApp.ShapeUtility
 {
+    /*
+     * Utility for a shape bounding box, as polygon does not seem to implement something like this by default
+     */
     class ShapeBoundingBox
     {
+        
         private double _xMin;
 
         public double XMin
@@ -41,18 +45,22 @@ namespace GraphicsApp.Models
             set { _yMax = value; }
         }
 
+        //
         public ShapeBoundingBox(Ellipse ellipse)
         {
+            GenerateBounds(ellipse);
         }
 
-        //Prefered constructor, take in point collection, generate bounds from it, ready to use
-        public ShapeBoundingBox(PointCollection points)
+        public ShapeBoundingBox(Polygon polygon)
         {
-            GenerateBounds(points);
+            GenerateBounds(polygon);
         }
 
-        private void GenerateBounds(PointCollection points)
+        //for each point, check if min max has been exceeded from point x,y, update min max
+        private void GenerateBounds(Polygon polygon)
         {
+            PointCollection points = polygon.Points;
+
             if(points != null && points.Count > 0)
             {
                 XMin = points[0].X;
@@ -72,6 +80,17 @@ namespace GraphicsApp.Models
             {
                 throw new Exception("InvalidPointCollection");
             }
+        }
+
+        //find width height, /2.0 to get reach on either side, min = -ve, max = +ve
+        private void GenerateBounds(Ellipse ellipse)
+        {
+            double x = ellipse.Width / 2.0;
+            double y = ellipse.Height / 2.0;
+            XMin = -x;
+            XMax = x;
+            YMin = -y;
+            YMax = y;
         }
 
         //Return the centre of this bounding box for rendering to centre needs

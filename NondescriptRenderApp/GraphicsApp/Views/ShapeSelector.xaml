@@ -9,12 +9,15 @@
              mc:Ignorable="d" 
              d:DesignHeight="400" d:DesignWidth="200">
     <Grid>
-        <StackPanel Width="200">
+        <StackPanel Width="200" Orientation="Vertical">
             <TextBlock TextAlignment="Center" Margin="0, 10">Select a Render Shape</TextBlock>
             <Button Command="{Binding CommandSetShape}" CommandParameter="Rectangle" Content="Rectangle" />
             <Button Command="{Binding CommandSetShape}" CommandParameter="Triangle" Content="Triangle" />
-            <Button Command="{Binding CommandSetShape}" CommandParameter="Ellipse" Content="Ellipse" />
+            <Button Command="{Binding CommandSetShape}" CommandParameter="Circle" Content="Circle" />
             <Button Command="{Binding CommandSetShape}" CommandParameter="Hexagon" Content="Hexagon" />
+            <TextBlock TextAlignment="Center" Margin="0, 10">Try Load Custom Shape</TextBlock>
+            <TextBox Text="{Binding CustomShape}"></TextBox>
+            <Button Command="{Binding CommandSetShape}" CommandParameter="{Binding CustomShape}" Content="Load Custom" />
             <!--
             <Button Command="{Binding SetShapeCommand}" CommandParameter="custom" Content="Custom Polygon" />
             -->

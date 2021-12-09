@@ -4,6 +4,9 @@ using System.Text;
 
 namespace GraphicsApp.ShapeUtility
 {
+    /*
+     * Interface for build methods common to all shapes within scope
+     */
     interface IShapeBuilder
     {
         public void Reset();

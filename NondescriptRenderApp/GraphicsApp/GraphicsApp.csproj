@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="ShapeDefinitions\Circle.xml" />
+    <None Remove="ShapeDefinitions\Ellipse.xsd" />
     <None Remove="ShapeDefinitions\Hexagon.xml" />
     <None Remove="ShapeDefinitions\Polygon.xsd" />
     <None Remove="ShapeDefinitions\Rectangle.xml" />
@@ -14,6 +16,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="ShapeDefinitions\Circle.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShapeDefinitions\Ellipse.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="ShapeDefinitions\Hexagon.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>

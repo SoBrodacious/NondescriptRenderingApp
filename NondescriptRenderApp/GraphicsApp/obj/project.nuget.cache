@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K+HlcgJbxjU3q5//vI1+eLwWvRgRO5/W1ZTnXJBczktmGftPDUwYCkUVtDdddOfUGe9zBcR8oPhY/xiQiRiLzA==",
+  "dgSpecHash": "Kber0qfl7k3Ovw/dSSNXfq2KFecjW0ydgz1USh7iz0lirCWlL9WaX1SU+YT3bbOd6AfExJTRQg0nU3e1pXY5LA==",
   "success": true,
-  "projectFilePath": "E:\\Programming\\GraphicsAppRebuild\\GraphicsApp\\GraphicsApp.csproj",
+  "projectFilePath": "E:\\Programming\\NDRA\\NondescriptRenderingApp\\NondescriptRenderApp\\GraphicsApp\\GraphicsApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sajke\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.31\\microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512",
     "C:\\Users\\sajke\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512",
