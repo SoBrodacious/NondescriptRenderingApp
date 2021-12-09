@@ -1,4 +1,7 @@
-﻿using System;
+﻿using GraphicsApp.Views;
+using Prism.Ioc;
+using Prism.Unity;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -11,7 +14,17 @@ namespace GraphicsApp
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
-    public partial class App : Application
+    public partial class App : PrismApplication
     {
+        protected override Window CreateShell()
+        {
+            var w = Container.Resolve<Shell>();
+            return w;
+        }
+        protected override void RegisterTypes(IContainerRegistry containerRegistry)
+        {
+            //throw new NotImplementedException();
+            //containerRegistry.Register<>();
+        }
     }
 }

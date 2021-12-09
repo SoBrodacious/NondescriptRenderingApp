@@ -1,39 +1,57 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup />
+  <PropertyGroup>
+    <_LastSelectedProfileId>E:\Programming\GraphicsAppRebuild\GraphicsApp\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
   <ItemGroup>
     <ApplicationDefinition Update="App.xaml">
       <SubType>Designer</SubType>
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Views\GraphicsCanvasView.xaml.cs">
+    <Compile Update="Views\AnimationSelector.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\GraphicsWindow.xaml.cs">
+    <Compile Update="Views\GraphicsCanvas.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\ShellView.xaml.cs">
+    <Compile Update="Views\GraphicsUI.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\UIView.xaml.cs">
+    <Compile Update="Views\ShapeSelector.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Shell.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="ShapeDefinitions\Polygon.xsd">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="ShapeDefinitions\Ellipse.xsd">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\GraphicsCanvasView.xaml">
+    <Page Update="Views\AnimationSelector.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\GraphicsWindow.xaml">
+    <Page Update="Views\GraphicsCanvas.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\ShellView.xaml">
+    <Page Update="Views\GraphicsUI.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\UIView.xaml">
+    <Page Update="Views\ShapeSelector.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Shell.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

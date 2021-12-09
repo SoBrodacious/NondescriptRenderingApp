@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="GraphicsApp.Views.AnimationSelector"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GraphicsApp.Views"
+             mc:Ignorable="d" 
+             xmlns:prism="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             d:DesignHeight="400" d:DesignWidth="200">
+    <Grid>
+        <StackPanel Width="200" Orientation="Vertical">
+            <TextBlock TextAlignment="Center" Margin="0, 10">Select an Animation</TextBlock>
+            <Button Command="{Binding CommandSelectAnimation}" CommandParameter="LeftRight" Content="LeftRight" />
+            <Button Command="{Binding CommandSelectAnimation}" CommandParameter="TopBottom" Content="TopBottom" />
+            <Button Command="{Binding CommandSelectAnimation}" CommandParameter="Box" Content="Box" />
+            <Button Command="{Binding CommandSelectAnimation}" CommandParameter="Circle" Content="Circle" />
+            <!--
+            <Button Command="{Binding CommandSelectAnimation}" CommandParameter="Test" Content="Test" />
+            -->
+
+            <TextBlock TextAlignment="Center" Margin="0, 10">Duration: Seconds</TextBlock>
+            <TextBox Text="{Binding TimeSeconds}" Margin="20"></TextBox>
+        </StackPanel>
+    </Grid>
+</UserControl>

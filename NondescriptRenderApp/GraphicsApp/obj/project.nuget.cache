@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "yyYKfI9mABxetL8K1Z6RkraxZJzd3LW1yx6qmWa9jovX4qcVXkPdTJhLqtREUjNzMsV+cOt2EiHwQCmNu3yuJg==",
+  "dgSpecHash": "Kber0qfl7k3Ovw/dSSNXfq2KFecjW0ydgz1USh7iz0lirCWlL9WaX1SU+YT3bbOd6AfExJTRQg0nU3e1pXY5LA==",
   "success": true,
-  "projectFilePath": "E:\\Programming\\GraphicsApp\\GraphicsApp\\GraphicsApp.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "E:\\Programming\\NDRA\\NondescriptRenderingApp\\NondescriptRenderApp\\GraphicsApp\\GraphicsApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sajke\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.31\\microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512",
+    "C:\\Users\\sajke\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512",
+    "C:\\Users\\sajke\\.nuget\\packages\\prism.unity\\8.1.97\\prism.unity.8.1.97.nupkg.sha512",
+    "C:\\Users\\sajke\\.nuget\\packages\\prism.wpf\\8.1.97\\prism.wpf.8.1.97.nupkg.sha512",
+    "C:\\Users\\sajke\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\sajke\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.2\\system.threading.tasks.extensions.4.5.2.nupkg.sha512",
+    "C:\\Users\\sajke\\.nuget\\packages\\unity.abstractions\\5.11.7\\unity.abstractions.5.11.7.nupkg.sha512",
+    "C:\\Users\\sajke\\.nuget\\packages\\unity.container\\5.11.11\\unity.container.5.11.11.nupkg.sha512"
+  ],
   "logs": []
 }
